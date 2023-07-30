@@ -3,43 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
+    <title>Password Generator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-<div class="container flex">
-        <!----User-Side-Start----->    
-<div class="options">
-    <h1>Choose Anyone</h1>
-<ul>  
-    <li> <button class="button" id="button1"> Rock 🥊</button></li>
-    <li> <button class="button" id="button2"> Paper 📄</button></li>
-    <li> <button class="button" id="button3"> Scissor ✂</button></li>
-</ul>
-    <h2 class="choice hidden">You Choose Rock</h2>
-</div>
-        <!----User-Side-Finish----->
-
-        <!----Computer Side Start--->
-<div class="computer">
-    <h1>Computer Choice</h1>
-<ul>  
-    <li> <button class="button1" id="button4"> Rock 🥊</button></li>
-    <li> <button class="button1" id="button5"> Paper 📄</button></li>
-    <li> <button class="button1" id="button6"> Scissor ✂</button></li>
-</ul>
-    <h2 class="choice2 hidden">Computer Choose Rock</h2>
-    
-</div>
-<div class="result">
-    <h1 class="text">Result</h1>
-    <h1 class="content hidden">You Win</h1>
-    <a href="index.html" class="reset">Reset Game </a>
-
-</div>
-
-</div>
-<script src="script.js"></script>
+<section>
+    <div class="container">
+        <h1 class="heading">Generate| <span>Random</span>Password</h1>
+        <input type="text" name="text" id="text" class="input" placeholder="Your Password Here">
+    <!-- input Area Finish -->
+    <div class="length">
+        <input type="range" name="range" id="slider" class="range" min="6" max="18" value="8"> 
+        <span class="slidenum">8</span>
+    </div>
+    <!-- Button Area Start -->
+        <button class="generatebtn" id="btn"><i class="fa fa-bolt fa"></i> Generate Password</button>
+        <a href="#" class="copylink" id="link">Copy Password</a>
+    </div>
+</section>
+    <script src="learn.js"></script>
 </body>
 </html>
